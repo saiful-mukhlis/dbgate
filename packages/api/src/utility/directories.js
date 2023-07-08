@@ -68,7 +68,8 @@ function packagedPluginsDir() {
   // console.log('__dirname', __dirname);
   // console.log('platformInfo.isElectronBundle', platformInfo.isElectronBundle);
   // console.log('platformInfo.isForkedApi', platformInfo.isForkedApi);
-  if (platformInfo.isDevMode) {
+  // ext by merchant
+  if (platformInfo.isDevMode || process.env.IS_USE_DEV_PLUGIN) {
     return path.resolve(__dirname, '../../../../plugins');
   }
   if (platformInfo.isDocker) {
