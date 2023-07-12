@@ -1,0 +1,2 @@
+import{S as r,i as a,s as p,t as u,c as l}from"./index-632e4f1b.js";import{l as m}from"./dbgate-datalib-0d3b84db.js";import"./lodash-29c9ec56.js";function c(t,e,i){let s;const n=u();return l(t,n,o=>i(1,s=o)),t.$$.update=()=>{t.$$.dirty&2&&(m.SqlDumper.keywordsCase=(s==null?void 0:s["sqlEditor.sqlCommandsCase"])||"upperCase")},[n,s]}class f extends r{constructor(e){super(),a(this,e,c,null,p,{})}}export{f as default};
+//# sourceMappingURL=SettingsListener-df75089f.js.map

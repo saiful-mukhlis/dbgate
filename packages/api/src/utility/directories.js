@@ -99,7 +99,7 @@ const packagedPluginList =
 
 function getPluginBackendPath(packageName) {
   if (packagedPluginList.includes(packageName)) {
-    if (platformInfo.isDevMode) {
+    if (platformInfo.isDevMode || process.env.IS_USE_DEV_PLUGIN) {
       return path.join(packagedPluginsDir(), packageName, 'src', 'backend', 'index.js');
     }
     return path.join(packagedPluginsDir(), packageName, 'dist', 'backend.js');
